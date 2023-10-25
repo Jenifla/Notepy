@@ -1,0 +1,268 @@
+/* CSS utama */
+.dashboard {
+  background-color: #faf1e4;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; /* Menyelaraskan konten secara horizontal */
+  width: 100%;
+  height: auto;
+}
+
+.dashboard .div {
+  background-color: #faf1e4;
+  height: auto;
+  position: relative;
+  width: 100%;
+  padding: 0;
+}
+
+.dashboard .overlap-group {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+}
+
+
+
+/* Aturan CSS reguler */
+.overlap-text {
+  color: #000000;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  text-align: center;
+  position: relative;
+  display: inline;
+  top: -150px;
+}
+
+h1{
+  font-weight: 50;
+}
+
+
+.dashboard .konten-logo {
+  height: 100vh;
+  margin-top: -100px;
+  position: relative;
+  display: flex;
+  align-self: start;
+  width: 50%;
+}
+
+.dashboard .konten-text {
+ /* Menempatkan elemen di dalam kolom kedua (grid kedua) */
+  height: auto;
+  position: relative;
+  display: flex;
+  width: 50%; /* Anda bisa menghapus properti width: 50% karena elemen ini akan mengisi kolom kedua sepenuhnya */
+  margin-left: 120px;
+  margin-right: 120px;
+  
+}
+
+.dashboard .overlap-group-2 {
+  height: auto;
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+
+.dashboard .ellipse {
+  background-color: #ffffff99;
+  border-radius: 164.5px/156px;
+  height: 312px;
+  left: 122px;
+  position: absolute;
+  top: 110px;
+  width: 329px;
+}
+
+.dashboard .img {
+  height: 237px;
+  left: 57px;
+  position: absolute;
+  top: 285px;
+  width: 246px;
+}
+
+.dashboard .sehatyuk {
+  height: 807px;
+  left: 0;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  width: 848px;
+}
+
+.dashboard .line {
+  height: 568px;
+  left: 637px;
+  position: absolute;
+  top: 152px;
+  width: 8px;
+}
+
+.dashboard .line-2 {
+  height: 7px;
+  left: 110px;
+  position: absolute;
+  top: 586px;
+  width: 618px;
+}
+
+.dashboard .line-3 {
+  height: 9px;
+  left: 41px;
+  position: absolute;
+  top: 604px;
+  width: 687px;
+}
+
+.dashboard .line-4 {
+  height: 624px;
+  left: 659px;
+  position: absolute;
+  top: 96px;
+  width: 5px;
+}
+
+
+
+.dashboard button {
+  background-color: #b86161;
+  border: none;
+  border-radius: 30px;
+  width: 290px;
+  height: 65px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-align: center;
+  white-space: nowrap;
+}
+
+
+.dashboard .button-bergabung{
+  text-decoration: none;
+  color: #000;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 20px;
+  font-weight: 300;
+  padding: 10px 30px;
+}
+
+.dashboard button:hover {
+  background-color: #c38080;
+}
+
+/* Tambahkan tombol garis tiga pada navbar untuk layar ponsel */
+.dashboard .navbar {
+  display: none;
+  /* Tambahkan style lainnya untuk tombol garis tiga, misalnya warna dan posisi */
+}
+
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column; 
+    height: auto;
+    max-width: 100%;/* Mengatur tata letak menjadi kolom saat layar sempit */
+  }
+
+  .dashboard .konten-logo{
+    height: 50%;
+  }
+
+  .dashboard .konten-text{
+    height: 50%;
+    margin-top: 0px;
+  }
+
+  .dashboard .overlap-group{
+    flex-direction: column 1fr 1fr;
+  }
+  .dashboard .overlap-group-2 .sehatyuk{
+    width: 500px;
+    height: 500px;
+  }
+
+  .dashboard .img,
+  .dashboard .ellipse,
+  .dashboard .line,
+  .dashboard  .line-2,
+  .dashboard  .line-3,
+  .dashboard .line-4{
+    display: none;
+  }
+
+ 
+  
+
+  .dashboard .konten-text {
+  
+  }
+
+  .overlap-text {
+    font-size: 14px;
+    top: 0px;
+    left: 0px;
+    
+  }
+  
+  .dashboard button {
+    border-radius: 30px;
+    width: 220px;
+    height: 50px;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    text-align: center;
+    white-space: nowrap;
+  }
+  .dashboard .button-bergabung{
+    color: #000;
+    font-size: 17px;
+    font-weight: 300;
+  }
+}
+
+/* Tambahkan aturan media query untuk layar kecil (misalnya, lebar maksimum 768px) */
+@media (max-width: 768px) {
+  .dashboard {
+    background-color: #faf1e4;
+    height: 100vh;
+  }
+
+  .dashboard .div{
+    height: auto;
+  }
+  .dashboard .overlap-group {
+    flex-direction: column; /* Mengatur tata letak satu kolom */
+  }
+
+  .dashboard .overlap-group .konten-text {
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+   
+  }
+  .overlap-text {
+    font-size: 14px;
+    top: -90px;
+    left: 0px;
+    
+  }
+
+  .konten-logo {
+    width: 100%;  
+    top: -50px;
+    position: absolute;
+    /* Menghapus properti position absolute */
+  }
+}

@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+.home {
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .webnavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 113px; /* Atur lebar sesuai kebutuhan */
+    /* ... (gaya lain yang Anda mungkin perlukan) */
+  }
+  
+ .home-me {
+    background-color: #ffffff;
+    height: 100vh;
+    position: relative;
+    margin-left: 113px;
+    width: 100%;
+  }
+ 
+ .konten-home {
+    background-color: #f3f3f3;
+    height: 1025px;
+    position: absolute;
+
+    top: 0;
+    width: 100%;
+  }
+
+  .topsee {
+    height: 150px;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 90%;
+  }
+
+  .barr {
+    height: 99px;
+    left: 0;
+    position: absolute;
+    top: 150px;
+    width: 90%;
+  }
+  
+ .konten-note {
+    height: 100vh;
+    left: 0;
+    position: absolute;
+    top: 245px;
+    width: 90%;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 35px; /* Jarak antar catatan */
+    padding: 20px 50px; /* Padding sesuai kebutuhan */
+  }
+  
+  /* Perubahan pada catatan (note) */
+.note {
+    background-color: #ecc2c2;
+    border-radius: 30px;
+    padding: 40px 40px;
+    text-align: justify;
+    font-size: 15px;
+    width: 80%;
+    position: relative;
+    /* Hapus properti height agar catatan (note) menyesuaikan tinggi dengan kontennya */
+}
+
+.note-content{
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: normal;
+}
+
+.icon-love {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  /* Tambahkan gaya lain yang sesuai */
+}
+
+.date {
+  color: #342e2e;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  /* Tambahkan gaya lain yang sesuai */
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+}
+
+.edit {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+  }
+
+
+  
+   .work {
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 50px;
+    display: flex;
+    gap: 10px;
+    height: 45px;
+    justify-content: center;
+    left: 430px;
+    padding: 10px;
+    position: absolute;
+    top: 16px;
+    width: 110px;
+  }
+  
+   .text-work,
+   .text-favorite,
+   .text-all {
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .favorite {
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid;
+    border-color: #000000;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 45px;
+    justify-content: center;
+    left: 232px;
+    padding: 10px;
+    position: absolute;
+    top: 16px;
+    width: 135px;
+  }
+  
+  .all {
+    align-items: center;
+    background-color: #e8c9c0;
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: 45px;
+    justify-content: center;
+    left: 44px;
+    padding: 10px;
+    position: absolute;
+    top: 16px;
+    width: 100px;
+  }
+  
+
+  
+   .pencarian {
+    height: 85px;
+    left: 588px;
+    position: absolute;
+    top: 51px;
+    width: 702px;
+  }
+  
+  .group-pencarian {
+    background-color: #ffffff;
+    border-radius: 80px;
+    height: 73px;
+    position: relative;
+    width: 700px;
+  }
+  
+   .icon-cari {
+    height: 26px;
+    left: 33px;
+    position: absolute;
+    top: 25px;
+    width: 30px;
+  }
+  
+  .text-cari {
+    color: #ada8a8;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 20px;
+    font-weight: 500;
+    left: 83px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 10px;
+  }
+  
+  .profile {
+    height: 80px;
+    left: 44px;
+    position: absolute;
+    top: 51px;
+    width: 299px;
+  }
+  
+   .user-img {
+    height: 70px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 8px;
+    width: 70px;
+  }
+  
+   .group-profile {
+    height: 87px;
+    left: 95px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+  
+  .text-user {
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 20px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .text-email-user {
+    color: #6d6d6d;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 39px;
+  }
+  
+   .navbar-instance {
+    height: 1117px !important;
+    left: 0 !important;
+    position: fixed !important;
+    top: 0 !important;
+    width: 120px !important;
+  }

@@ -1,0 +1,51 @@
+.splash-screen {
+  width: 100%;
+  height: 100vh;
+  background-size: 100% 100%;
+}
+
+.background-image{
+  height: 100vh;
+  width: 100%;
+}
+
+.logo {
+  max-width: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: auto;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 30px;
+  padding: 40px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Tambahkan aturan CSS media queries untuk responsif */
+@media (max-width: 1024px) {
+  .splash-screen {
+    /* Sesuaikan tata letak untuk layar tablet di sini */
+  }
+}
+
+@media (max-width: 768px) {
+  .splash-screen {
+    /* Sesuaikan tata letak untuk layar ponsel di sini */
+  }
+
+  .logo {
+    width: 200px; /* Ubah ukuran logo untuk layar ponsel */
+  }
+}

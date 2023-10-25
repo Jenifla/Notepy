@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+
+/* Navbar.css */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #faf1e4; /* Ganti sesuai dengan warna latar belakang yang diinginkan */
+}
+  
+  .container {
+    align-items: center;
+    display: inline-flex;
+    gap: 350px;
+    position: relative;
+
+    
+  }
+  
+  .container .text-wrapper {
+    -webkit-text-stroke: 1px #000000;
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 32px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-left: -1px;
+    text-decoration: none;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .container .frame {
+    align-items: center;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 90px;
+    justify-content: center;
+    padding: 12px 0px;
+    position: relative;
+  }
+  
+  .container .div-wrapper {
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    height: 48px;
+    text-decoration: none;
+    justify-content: center;
+    position: relative;
+    width: 85px;
+  }
+  
+  .container .div {
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-decoration: none;
+    line-height: normal;
+    margin-left: -1px;
+    margin-right: -1px;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .container .frame-2 {
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    height: 48px;
+    justify-content: center;
+    position: relative;
+    width: 85px;
+  }
+  
+  .container .text-wrapper-2 {
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    letter-spacing: 0;
+    line-height: normal;
+    position: relative;
+    width: fit-content;
+  }
+  
+  .container .frame-3 {
+    align-items: center;
+    display: flex;
+    gap: 10px;
+    height: 48px;
+    justify-content: center;
+    position: relative;
+    width: 85px;
+  }
+  
+  .container .frame-4 {
+    align-items: center;
+    background-color: #b86161;
+    border-radius: 10px;
+    display: inline-flex;
+    flex: 0 0 auto;
+    gap: 40px;
+    justify-content: center;
+    padding: 9px 12px;
+    position: relative;
+    color: #ffffff;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 18px;
+    font-weight: 500;
+    height: 35px;
+    letter-spacing: 0;
+    text-decoration: none;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    text-align: center;
+    width: 87px;
+  }
+  
+/* Tambahkan aturan media query untuk layar kecil (misalnya, lebar maksimum 768px) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Menyusun elemen dalam satu kolom saat layar sempit */
+    padding: 20px; /* Mengurangi padding pada layar kecil */
+  }
+
+  .container {
+    gap: 30px; /* Mengurangi jarak antara elemen-elemen */
+  }
+  
+  .container .text-wrapper {
+    font-size: 24px; 
+    /* Mengurangi ukuran font pada layar kecil */
+  }
+
+  .container .frame {
+    gap: 10px;
+    justify-content: center;
+    padding: 12px 0px;
+    position: relative;
+  }
+  .container .text-wrapper {
+    font-size: 25px;
+    margin-top: -15px;
+  }
+  
+  .container .text-wrapper-2 {
+    font-size: 15px;
+  }
+
+  .container .div {
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .container .frame-4 {
+    border-radius: 10px;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: 500;
+    height: 25px;
+    width: 67px;
+  }
+  /* Tambahkan perubahan lain yang diperlukan untuk tampilan responsif pada layar kecil */
+}
+
+/* Tambahkan aturan media query untuk layar kecil (misalnya, lebar maksimum 768px) */
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column; /* Menyusun elemen dalam satu kolom saat layar sempit */
+    padding: 20px; /* Mengurangi padding pada layar kecil */
+  }
+
+  .container {
+    gap: 10px; /* Mengurangi jarak antara elemen-elemen */
+  }
+  
+  .container .text-wrapper {
+    font-size: 24px; 
+    display: none;/* Mengurangi ukuran font pada layar kecil */
+  }
+
+  .container .frame {
+    gap: 10px;
+    justify-content: center;
+    padding: 12px 0px;
+    position: relative;
+  }
+  .container .text-wrapper {
+    font-size: 22px;
+  }
+  
+  .container .text-wrapper-2 {
+    font-size: 15px;
+  }
+
+  .container .div {
+    font-size: 15px;
+    margin-top: -10px;
+  }
+  .container .frame-4 {
+    border-radius: 10px;
+    display: inline-flex;
+    font-size: 15px;
+    font-weight: 500;
+    height: 25px;
+    width: 67px;
+  }
+  /* Tambahkan perubahan lain yang diperlukan untuk tampilan responsif pada layar kecil */
+}
