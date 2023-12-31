@@ -16,7 +16,7 @@
   height: 100vh;
 }
 
-.konten-gambar {
+.konten-gambar-signup{
   padding: 0;
   width: 50%;
 }
@@ -42,63 +42,55 @@
   justify-content: center;
   align-items: center;
 }
-.button {
-  display: flex;
-  justify-content: center;
-  align-items: center; 
-  margin-top: 20px;
-  height: 55px;
-  margin-bottom: 30px;
-}
 
-.username,
-.email,
-.password{
+.signup-username,
+.signup-email,
+.signup-password{
   display: flex;
   justify-content: center;
   position: relative;
   align-items: center;
+  top: 20px;
 }
 
-.input-username,
-.input-email,
-.input-password {
+
+.form-signup {
   position: relative;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
 }
 
-.box-username,
-.box-email{
+.sg-username,
+.sg-email{
   background-color: #f7ece8;
   border-radius: 20px;
   border: none;
   display: flex;
-  gap: 10px;
-  height: 45px;
-  width: 490px;
+  gap: 40px;
+  height: 65px;
+  width: 550px;
   padding: 10px 30px;
   margin-bottom: 35px;
   font-family: 'Inknut Antiqua', serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #00000054;
   position: relative;
   flex: 1; /* Mengisi seluruh lebar input container */
 }
 
-.box-password{
+.sg-password{
   background-color: #f7ece8;
   border-radius: 20px;
   border: none;
   display: flex;
   gap: 10px;
-  height: 45px;
-  width: 490px;
+  height: 65px;
+  width: 550px;
   padding: 10px 30px;
 
   font-family: 'Inknut Antiqua', serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #00000054;
   position: relative;
   flex: 1; /* Mengisi seluruh lebar input container */
@@ -277,18 +269,18 @@
     text-align: center;
   }
 
-  .konten-gambar {
+  .konten-gambar-signup {
     display: none; /* Hide the image on small screens */
   }
 
-  .box-username,
-  .box-email{
+  .sg-username,
+  .sg-email{
   border-radius: 20px;
   border: none;
   display: flex;
   gap: 10px;
-  height: 45px;
-  width: 490px;
+  height: 65px;
+  width: 550px;
   padding: 10px 30px;
  
 
@@ -311,22 +303,22 @@
     text-align: center;
   }
 
-  .konten-gambar {
+  .konten-gambar-signup {
     display: none; /* Hide the image on small screens */
   }
 
-  .box-username,
-  .box-email{
+  .sg-username,
+  .sg-email{
   border-radius: 15px;
-  height: 30px;
-  width: 300px;
+  height: 55px;
+  width: 410px;
   font-size: 15px;
   }
 
-  .box-password{
+  .sg-password{
     border-radius: 15px;
-    height: 30px;
-    width: 300px;
+    height: 55px;
+    width: 410px;
     font-size: 15px;
   }
 

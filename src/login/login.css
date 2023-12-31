@@ -16,12 +16,12 @@
   height: 100vh;
 }
 
-.konten-gambar {
+.konten-gambar-login {
   padding: 0;
   width: 50%;
 }
 
-.my-ima {
+.my-login {
   width: 100%;
   height: 100vh;
 }
@@ -44,7 +44,13 @@
 }
 
 
-.username,
+.login-email,
+.login-password{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
 
 .button {
   display: flex;
@@ -66,12 +72,12 @@
   border: none;
   display: flex;
   gap: 10px;
-  height: 45px;
-  width: 490px;
+  height: 65px;
+  width: 550px;
   margin-bottom: 35px;
   padding: 10px 30px;
   font-family: 'Inknut Antiqua', serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #00000054;
   position: relative;
   flex: 1; /* Mengisi seluruh lebar input container */
@@ -83,12 +89,12 @@
   border: none;
   display: flex;
   gap: 10px;
-  height: 45px;
-  width: 490px;
+  height: 65px;
+  width: 550px;
   
   padding: 10px 30px;
   font-family: 'Inknut Antiqua', serif;
-  font-size: 18px;
+  font-size: 20px;
   color: #00000054;
   position: relative;
   flex: 1; /* Mengisi seluruh lebar input container */
@@ -291,16 +297,16 @@
 
   .box {
     border-radius: 15px;
-    height: 30px;
-    width: 300px;
+    height: 55px;
+    width: 410px;
     font-size: 15px;
     flex: 1; /* Mengisi seluruh lebar input container */
   }
   
   .box-pass {
     border-radius: 15px;
-    height: 30px;
-    width: 300px;
+    height: 55px;
+    width: 410px;
     font-size: 15px;
   }
   

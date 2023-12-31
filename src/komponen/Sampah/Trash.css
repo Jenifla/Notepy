@@ -1,0 +1,94 @@
+.sampah {
+   
+    width: 100%;
+    height: 100vh;
+    display: flex;
+  }
+  
+  .sampah .frame-2 {
+    
+    background-color: #e8c9c0;
+    border-radius: 25px;
+    display: flex;
+    height: 64px;
+    left: 264px;
+    padding: 0px 25px;
+    position: absolute;
+    top: 27px;
+    width: 970px;
+  }
+  
+  .sampah .title-prof {
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 0;
+    line-height: normal;
+    margin-top: -1px;
+    position: relative;
+    width: fit-content;
+  }
+
+  .sampah .konten-note-sam {
+    height: 100vh;
+    left: 10%;
+    position: absolute;
+    top: 15%;
+    width: 70%;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 10px; /* Jarak antar catatan */
+    padding: 20px 50px; /* Padding sesuai kebutuhan */
+  }
+  
+  /* Perubahan pada catatan (note) */
+.sampah .note {
+    background-color: #ecc2c2;
+    border-radius: 30px;
+    padding: 40px 40px;
+    text-align: justify;
+    font-size: 15px;
+    width: 250px;
+    height: 400px;
+    position: relative;
+    /* Hapus properti height agar catatan (note) menyesuaikan tinggi dengan kontennya */
+}
+
+.sampah .note-content{
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: normal;
+}
+
+.sampah .icon-love {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  /* Tambahkan gaya lain yang sesuai */
+}
+
+.sampah .date {
+  color: #342e2e;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  /* Tambahkan gaya lain yang sesuai */
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+}
+
+.sampah .edit {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+  }

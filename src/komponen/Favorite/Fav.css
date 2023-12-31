@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --tinggi-catatan: 100px; /* Ganti dengan tinggi catatan yang sesuai */
+}
+
+
+.fav {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: max-content;
+    width: max-content;
+    width: 100%;
+  }
+  .webnavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 113px; /* Atur lebar sesuai kebutuhan */
+    /* ... (gaya lain yang Anda mungkin perlukan) */
+  }
+  .fav .overlap-wrapper {
+    background-color: #ffffff;
+    height: 100vh;
+    position: relative;
+    margin-left: 113px;
+    width: 100%;
+  }
+  
+  .fav .overlap {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .fav .web-navbar {
+    height: 1117px !important;
+    left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 120px !important;
+  }
+  
+  .fav .rectangle {
+    background-color: #f3f3f3;
+    height: 100vh;
+    left: 113px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .fav .topsee {
+    height: 150px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 90%;
+  }
+  
+  .fav .pencarian {
+    height: 85px;
+    left: 588px;
+    position: absolute;
+    top: 51px;
+    width: 702px;
+  }
+  
+  .fav .overlap-group {
+    background-color: #ffffff;
+    border-radius: 80px;
+    height: 73px;
+    position: relative;
+    width: 700px;
+  }
+  
+  .fav .vector {
+    height: 26px;
+    left: 33px;
+    position: absolute;
+    top: 25px;
+    width: 30px;
+  }
+  
+  .fav .text-wrapper {
+    color: #ada8a8;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 20px;
+    font-weight: 500;
+    left: 83px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 10px;
+  }
+  
+  .fav .user-fav {
+    height: 80px;
+    left: 44px;
+    position: absolute;
+    top: 51px;
+    width: 299px;
+  }
+  
+  .fav .image-container {
+    height: 70px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 8px;
+    width: 70px;
+    overflow: hidden;
+       border-radius: 50%;
+  }
+
+  .fav .ellipse{
+    width: 100%;
+  height: 100%;
+  object-fit: cover; 
+  }
+  
+  .fav .div {
+    height: 87px;
+    left: 95px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+  
+  .fav .text-wrapper-2 {
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 20px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .fav .text-wrapper-3 {
+    color: #6d6d6d;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 39px;
+  }
+  
+  .fav .barr {
+    background-color: #e8c9c0;
+    height: 99px;
+  
+  
+    position: absolute;
+    top: 150px;
+    width: 100%;
+  }
+  
+  .fav .text-wrapper-4 {
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 36px;
+    font-weight: 400;
+    left: 76px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 4px;
+  }
+
+  .fav .konten-note {
+    
+    min-height: calc(100vh - 245px - var(--tinggi-catatan) * JUMLAH_CATATAN);
+    left: 0;
+    position: absolute;
+    top: 245px;
+    width: 100%;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 35px; /* Jarak antar catatan */
+    padding: 20px 50px; /* Padding sesuai kebutuhan */
+  }
+  
+  /* Perubahan pada catatan (note) */
+.fav .note {
+    background-color: #ecc2c2;
+    border-radius: 30px;
+    padding: 40px 40px;
+    text-align: justify;
+    font-size: 15px;
+    width: 80%;
+    position: relative;
+    /* Hapus properti height agar catatan (note) menyesuaikan tinggi dengan kontennya */
+}
+
+.fav .note-content{
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: normal;
+}
+
+.fav .icon-love {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  /* Tambahkan gaya lain yang sesuai */
+}
+
+.fav .date {
+  color: #342e2e;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  /* Tambahkan gaya lain yang sesuai */
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+}
+
+.fav .edit {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+  }

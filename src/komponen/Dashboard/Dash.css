@@ -1,12 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
 
+:root {
+  --tinggi-catatan: 100px; /* Ganti dengan tinggi catatan yang sesuai */
+}
+
 .home {
-    background-color: #ffffff;
+    background-color: #f3f3f3;
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: max-content;
+    width: max-content;
+    
     width: 100%;
-    height: 100%;
   }
 
   .webnavbar {
@@ -18,16 +24,16 @@
   }
   
  .home-me {
-    background-color: #ffffff;
-    height: 100vh;
+    background-color: #f3f3f3;
+    height: fit-content;
     position: relative;
     margin-left: 113px;
     width: 100%;
   }
  
  .konten-home {
-    background-color: #f3f3f3;
-    height: 1025px;
+    
+  min-height: calc(100vh - 245px); 
     position: absolute;
 
     top: 0;
@@ -43,19 +49,34 @@
   }
 
   .barr {
+    background-color: #e8c9c0;
     height: 99px;
-    left: 0;
+  
+  
     position: absolute;
     top: 150px;
-    width: 90%;
+    width: 100%;
+  }
+  
+  .text-wrapper-4 {
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 36px;
+    font-weight: 400;
+    left: 76px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 4px;
   }
   
  .konten-note {
-    height: 100vh;
+ 
+  min-height: calc(100vh - 245px - var(--tinggi-catatan) * JUMLAH_CATATAN);
     left: 0;
     position: absolute;
     top: 245px;
-    width: 90%;
+    width: 100%;
     
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -82,6 +103,15 @@
     font-weight: 400;
     text-align: justify;
     line-height: normal;
+}
+
+.note-title{
+  color: #000000;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-align: justify;
+  line-height: normal;
 }
 
 .icon-love {
@@ -216,7 +246,7 @@
     top: 10px;
   }
   
-  .profile {
+  .prof {
     height: 80px;
     left: 44px;
     position: absolute;
@@ -224,13 +254,20 @@
     width: 299px;
   }
   
-   .user-img {
+  .image-container {
     height: 70px;
     left: 0;
     object-fit: cover;
     position: absolute;
     top: 8px;
     width: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+  .user-img{
+    width: 100%;
+  height: 100%;
+  object-fit: cover; 
   }
   
    .group-profile {
@@ -272,3 +309,176 @@
     top: 0 !important;
     width: 120px !important;
   }
+
+  /* Tambahkan gaya CSS untuk modal */
+
+/* Gaya untuk konten modal */
+.modal-content {
+  font-family: 'Inknut Antiqua', serif;
+  padding: 20px;
+  
+}
+
+/* Gaya untuk judul modal */
+.modal-header {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Gaya untuk tombol-tombol pada modal */
+.btn-edit,
+.btn-hapus {
+  margin-right: 40px;
+}
+
+
+/* Gaya untuk konten utama pada modal */
+.modal-body {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.modal-body .hder{
+  flex-direction: row;
+}
+
+/* Gaya untuk ikon hati pada modal */
+.modal-body .icon-fav {
+  font-size: 45px;
+  margin-right: 450px;
+}
+
+/* Gaya untuk teks pada modal */
+.modal-body h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Gaya untuk teks tanggal pada modal */
+.modal-body p {
+  margin-bottom: 20px;
+}
+
+.modal-body .tanggal{
+  text-align: right;
+  font-size: 15px;
+  color: #6d6d6d;
+}
+
+/* Gaya untuk tombol-tombol pada modal */
+
+.modal-body .btn-kategori {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+
+.modal-body .icon-love,
+.modal-body .btn-edit,
+.modal-body .btn-hapus {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Jarak antara btn edit dan btn hapus */
+.modal-body .btn-edit, .modal-body .btn-hapus{
+  margin-right: 40px; 
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+.modal-body .btn-edit:hover, .modal-body .btn-hapus:hover{
+  margin-right: 40px; 
+  border: 1px solid #000000;
+  color: #ffffff;
+  border-radius: 20px;
+  background-color: #000000;
+}
+
+.modal-body .btn-edit:active, .modal-body .btn-hapus:active{
+  margin-right: 40px !important; 
+  border: 1px solid #000000 !important;
+  color: #ffffff !important;
+  border-radius: 20px !important;
+  background-color: #000000 !important;
+}
+
+.modal-footer .btn-batal,
+.modal-footer .btn-simpan
+{
+  background-color: transparent;
+  border: none;
+  color: #000;
+}
+.modal-footer .btn-batal:hover,
+.modal-footer .btn-simpan:hover
+{
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  color: #000;
+}
+
+.modal-footer .btn-batal:active,
+.modal-footer .btn-simpan:active
+{
+  background-color: transparent !important;
+  border: 2px solid #000000 !important;
+  border-radius: 20px !important;
+  color: #000 !important;
+}
+
+.modal-edit-todo .modal-header, .modal-edit-note .modal-header{
+  border-bottom: none;
+ 
+}
+.modal-edit-todo .modal-footer, .modal-edit-note .modal-footer{
+ 
+  border-top: none;
+}
+
+.modal-edit-note .input-jdlnote{
+ 
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.modal-kategori-note .modal-header,
+.modal-kategori-todo .modal-header{
+  border-bottom: none;
+}
+
+.modal-kategori-note .modal-footer,
+.modal-kategori-todo .modal-footer{
+  border-top: none;
+}
+.modal-kategori-note .kategori,
+.modal-kategori-todo .kategori{
+  background-color: transparent;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  color: #000;
+  margin-right: 20px;
+}
+
+.modal-kategori-note .kategori:hover,
+.modal-kategori-todo .kategori:hover{
+  background-color: #000000;
+  border: 2px solid #000000;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.modal-kategori-note .kategori:active,
+.modal-kategori-todo .kategori:active{
+  background-color: #000000 !important;
+  border: 2px solid #000000 !important;
+  border-radius: 20px !important;
+  color: #ffffff !important;
+}

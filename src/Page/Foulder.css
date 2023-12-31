@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Inknut+Antiqua:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --tinggi-folder: 100px; /* Ganti dengan tinggi catatan yang sesuai */
+}
+
+.folder {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+  }
+  .webnavbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 113px; /* Atur lebar sesuai kebutuhan */
+    /* ... (gaya lain yang Anda mungkin perlukan) */
+  }
+  .folder .overlap-wrapper {
+    background-color: #f3f3f3;
+    position: relative;
+    margin-left: 113px;
+    width: 100%;
+  }
+  
+  .folder .overlap {
+    height: 100vh;
+    position: absolute;
+    width: 100%;
+  }
+  
+  .folder .web-navbar {
+    height: 1117px !important;
+    left: 0 !important;
+    position: absolute !important;
+    top: 0 !important;
+    width: 120px !important;
+  }
+  
+  .folder .rectangle {
+    
+    height: 100vh;
+    left: 113px;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+  
+  .folder .topsee {
+    height: 150px;
+    left: 0;
+    right: 0;
+    position: absolute;
+    top: 0;
+    width: 90%;
+  }
+  
+  .folder .pencarian {
+    height: 85px;
+    left: 588px;
+    position: absolute;
+    top: 51px;
+    width: 702px;
+  }
+  
+  .folder .overlap-group {
+    background-color: #f3f3f3;
+    border-radius: 80px;
+    height: 73px;
+    position: relative;
+    width: 700px;
+  }
+  
+  .folder .vector {
+    height: 26px;
+    left: 33px;
+    position: absolute;
+    top: 25px;
+    width: 30px;
+  }
+  
+  .folder .text-wrapper {
+    color: #ada8a8;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 20px;
+    font-weight: 500;
+    left: 83px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 10px;
+  }
+  
+  .folder .user-prof {
+    height: 80px;
+    left: 44px;
+    position: absolute;
+    top: 51px;
+    width: 299px;
+  }
+  
+  .folder .image-container {
+    height: 70px;
+    left: 0;
+    object-fit: cover;
+    position: absolute;
+    top: 8px;
+    width: 70px;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .folder .ellipse{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .folder .div {
+    height: 87px;
+    left: 95px;
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+  
+  .folder .text-wrapper-2 {
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 20px;
+    font-weight: 500;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 0;
+  }
+  
+  .folder .text-wrapper-3 {
+    color: #6d6d6d;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 14px;
+    font-weight: 400;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 39px;
+  }
+  
+  .folder .barr {
+    background-color: #e8c9c0;
+    height: 99px;
+  
+  
+    position: absolute;
+    top: 150px;
+    width: 100%;
+  }
+  
+  .folder .text-wrapper-4 {
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 36px;
+    font-weight: 400;
+    left: 76px;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    top: 4px;
+  }
+  
+  .folder .rectangle-2 {
+   
+    min-height: calc(100vh - 245px - var(--tinggi-folder) * JUMLAH_FOLDER);
+    position: absolute;
+    top: 245px;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Menentukan lebar minimum 300px dan memungkinkan responsif */
+    grid-template-rows: min-content;
+    gap: 40px;
+    padding: 50px 50px;
+  }

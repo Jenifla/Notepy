@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 import "./singup.css"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
@@ -18,10 +19,21 @@ const SignUp = () => {
     setShowPassword(!showPassword);
   };
 
+  const saveData = async (e) => {
+    e.preventDefault();
+      // Kirim data ke endpoint backend untuk disimpan
+    await axios.post('http://localhost:8080/user/signUp', {
+        username: username,
+        email: email,
+        password: password
+    });
+    window.location.href= 'http://localhost:3000/SignUp';
+    }
+
   return (
     <div className="SignUp">
       <div className="konten">
-        <div className="konten-gambar">
+        <div className="konten-gambar-signup">
           <img className="my-scattered" alt="My scattered" src={image1} />
         </div>
         <div className="konten-signup">
@@ -41,51 +53,51 @@ const SignUp = () => {
               <div className="text-wrapper-8">OR</div>
               <img className="line" alt="Line" src={image5} />
             </div>
-            <div className="username">
-              <div className="input-username">
-                <input
-                className="box-username"
-                  type="text"
-                  placeholder="Username"
-                  value={username}
-                  onChange={(e) => setUsername(e.target.value)}
-                />
+            <form className="form-signup" onSubmit={saveData}>
+              <div className="signup-username">
+                  <input
+                    className="sg-username"
+                    type="text"
+                    placeholder="Username"
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
+                  />
+                
               </div>
-            </div>
-            <div className="email">
-              <div className="input-email">
-                <input
-                className="box-email"
-                  type="email"
-                  placeholder="Email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                />
+              <div className="signup-email">
+                  <input
+                    className="sg-email"
+                    type="email"
+                    placeholder="Email"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                  />
+                
               </div>
-            </div>
-            <div className="password">
-              <div className="input-password">
-                <input
-                className="box-password"
-                  type={showPassword ? "text" : "password"}
-                  placeholder="Password"
-                  value={password}
-                  onChange={(e) => setPassword(e.target.value)}
-                />
-                <FontAwesomeIcon
-                  icon={showPassword ? faEyeSlash : faEye}
-                  className="icon-eye-signup"
-                  onClick={togglePasswordVisibility}
-                />
+              <div className="signup-password">
+                
+                  <input
+                    className="sg-password"
+                    type={showPassword ? "text" : "password"}
+                    placeholder="Password"
+                    value={password}
+                    onChange={(e) => setPassword(e.target.value)}
+                  />
+                  <FontAwesomeIcon
+                    icon={showPassword ? faEyeSlash : faEye}
+                    className="icon-eye-signup"
+                    onClick={togglePasswordVisibility}
+                  />
+                
               </div>
-            </div>
-            <div className="button">
-              <Link to="/LogIn" className="button-sing-up">Sign Up</Link>
-            </div>
+              <div className="button">
+                <button type="submit" className="button-sing-up">Sign Up</button>
+              </div>
+            </form>
             <div className="frame">
               <div className="text-wrapper-6">Already have an account?</div>
               <div className="text-wrapper-7">
-              <Link to="/LogIn">Log in</Link>
+                <Link to="/LogIn">Log in</Link>
               </div>
             </div>
           </div>

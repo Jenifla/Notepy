@@ -1,0 +1,248 @@
+.web-navbar {
+    background-color: #e8c9c0;
+    height: 1117px;
+    width: 113px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    left: 0;
+    z-index: 1;
+}
+  
+  
+
+  .img {
+    height: 89px;
+    width: 113px;
+    object-fit: cover;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .make-new{
+    background-size: 100% 100%;
+    height: 60px;
+    left: 10px;
+    position: absolute;
+    top: 175px;
+    width: 60px;
+  }
+  
+
+  .plus {
+    height: 35px;
+    left: 12px;
+    position: absolute;
+    top: 13px;
+    width: 35px;
+    
+  }
+
+  .menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .icon-home{
+    height: 28px;
+    left: 0;
+    top: 13px;
+    width: 30px;
+    margin-top: 100px;
+    margin-bottom: 25px;
+  }
+  .icon-folder{
+    width: 26.549px;
+    height: 23.998px;
+    flex-shrink: 0;
+    
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+  .icon-favorite,
+  .icon-profile{
+    width: 26.549px;
+    height: 27.271px;
+    flex-shrink: 0;
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
+
+  .icon-profi{
+    border: none;
+  }
+  
+  .logout {
+    width: 28.673px;
+    height: 23.998px;
+    flex-shrink: 0;
+    margin-top: 100px;/* Styling untuk tombol logout, sesuaikan sesuai kebutuhan Anda */
+  }
+  
+/* CSS untuk dropdown menu */
+.dropdown-menu {
+  min-width: auto; /* Atur lebar dropdown menu sesuai kebutuhan */
+  background-color: #ffffff; /* Warna latar belakang dropdown menu */
+  border: 1px solid #ced4da; /* Warna garis pinggir dropdown menu */
+  border-radius: 5px; /* Atur border radius dropdown menu */
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15); /* Efek shadow dropdown menu */
+}
+
+.dropdown-item {
+  padding: 0.5rem 1rem; /* Padding item dropdown menu */
+  color: #000000; /* Warna teks dropdown menu */
+  font-size: 14px; /* Ukuran teks dropdown menu */
+  background-color: #ffffff;
+  transition: background-color 0s; /* Transisi saat hover item dropdown menu */
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa; /* Warna latar belakang saat hover item dropdown menu */
+  color: #000000; /* Warna teks saat hover item dropdown menu */
+}
+
+.dropdown-item:active,
+.dropdown-item:focus {
+  background-color: #f8f9fa !important; /* Warna latar belakang saat hover item dropdown menu */
+  color: #000000 !important; /* Warna teks saat hover item dropdown menu */
+}
+.dropdown-toggle::after {
+  display: none; /* Sembunyikan ikon panah di tombol dropdown */
+}
+
+.modal-header {
+  border-bottom: none; /* Menghapus garis bawah pada header modal */
+}
+
+.modal-footer {
+  border-top: none; /* Menghapus garis atas pada footer modal */
+}
+
+.modal-folder .jd-folder{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-catatan .modal-header{
+  border-bottom: none;
+  
+}
+
+.modal-catatan .modal-footer{
+  border-top: none;
+}
+
+.modal-catatan .input-jdlnote{
+ 
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.modal-catatan .btn-batal,
+.modal-catatan .btn-simpan{
+  border: none;
+  background-color: transparent;
+  color: #000000;
+}
+
+.modal-catatan .btn-batal:hover,
+.modal-catatan .btn-simpan:hover{
+  border: 2px solid #000000;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #000000;
+}
+
+.modal-catatan .btn-batal:focus,
+.modal-catatan .btn-simpan:focus{
+  border: 2px solid #000000;
+  background-color: transparent !important;
+  color: #000000 !important;
+}
+
+.modal-todo .modal-header{
+  border-bottom: none;
+  
+}
+
+.modal-todo .modal-footer{
+  border-top: none;
+}
+
+.modal-todo .input-jdltodo{
+ 
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.modal-todo .input-tugas{
+ 
+  height: 50px;
+  margin-bottom: 10px;
+}
+
+.modal-todo .btnadd{
+  background-color: transparent;
+  border: 1px solid #000000;
+  
+  color: #000000;
+}
+
+.modal-todo .btnadd:hover{
+  background-color: #000000;
+  border: 1px solid #000000;
+  
+  color: #ffffff;
+}
+
+.modal-todo .btn-batal,
+.modal-todo .btn-simpan{
+  border: none;
+  background-color: transparent;
+  color: #000000;
+}
+
+.modal-todo .btn-batal:hover,
+.modal-todo .btn-simpan:hover{
+  border: 2px solid #000000;
+  border-radius: 20px;
+  background-color: transparent;
+  color: #000000;
+}
+.modal-todo .btnadd:focus,
+.modal-todo .btn-simpan:focus{
+  
+  background-color: transparent !important;
+  color: #000000 !important;
+}
+
+
+.modal-folder .modal-header{
+  border-bottom: none;
+  
+}
+
+.modal-folder .modal-footer{
+  border-top: none;
+}
+
+.modal-folder .form-control{
+  height: 50px;
+}
+
+/* .modal-folder .form-control::placeholder {
+  color: #ffffff;
+  font-size: 16px;
+  background-image: linear-gradient(to right, #E6BBBB 25%, transparent 10%);
+  
+} */
+
+.modal-folder .modal-footer .btn-batal, 
+.modal-folder .modal-footer .btn-buat{
+  color: #000000;
+ background-color: transparent;
+ border: none;
+}

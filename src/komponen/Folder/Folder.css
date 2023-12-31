@@ -1,0 +1,90 @@
+
+  
+ .rectangle-2 {
+    
+    min-height: calc(100vh - 245px - var(--tinggi-folder) * JUMLAH_FOLDER);
+    position: absolute;
+    top: 245px;
+
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Menentukan lebar minimum 300px dan memungkinkan responsif */
+    grid-template-rows: min-content;
+    gap: 40px;
+    padding: 50px 50px;
+  }
+  
+ 
+  
+.grid-item {
+    background-color: #d9d9d9;
+    border-radius: 30px;
+    height: 220px;
+    position: relative;
+    width: 235px;
+    display: flex;
+    text-align: center;
+  }
+  
+ .icon-folder-open {
+    height: 133px;
+    color: #ecc2c2;
+    left: 30px;
+    position: absolute;
+    top: 32px;
+    width: 200px;
+  }
+  
+  .text-wrapper-5 {
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 20px;
+    font-weight: 600;
+    left: 60px;
+    position: absolute;
+    text-align: center;
+    top: 169px;
+  }
+
+  .ellipsis {
+    font-size: 30px; /* Ubah ukuran ikon ellipsis */
+    color: #000; /* Ubah warna ikon ellipsis sesuai kebutuhan */
+    position: absolute;
+    top: 20px; /* Atur posisi vertikal ke atas */
+    left: 210px; /* Atur posisi horizontal ke kanan */
+    cursor: pointer; /* Ubah kursor saat diarahkan ke ikon ellipsis */
+  }
+  
+  .dropdown-content {
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 15px;
+    position: absolute;
+    top: 35px; /* Sesuaikan posisi dropdown-content dengan ikon ellipsis */
+    left: 200px;
+    width: 100px;
+    background-color: #fff; /* Warna latar belakang dropdown-content */
+    border: 1px solid #ccc; /* Tambahkan border untuk memisahkan dropdown */
+    border-radius: 5px; /* Ubah border-radius untuk membuatnya terlihat lebih halus */
+    padding: 5px; /* Sesuaikan padding dropdown-content */
+    z-index: 1; /* Atur z-index agar dropdown-content muncul di atas grid-item lainnya */
+  }
+
+  .modal-edit-folder .modal-header{
+    border-bottom: none;
+  }
+  
+  .modal-edit-folder .modal-footer{
+    border-top: none;
+  }
+  .modal-edit-folder .jd-folder{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.modal-edit-folder .modal-footer .btn-batal, 
+.modal-edit-folder .modal-footer .btn-buat{
+  color: #000000;
+ background-color: transparent;
+ border: none;
+}
+  

@@ -1,0 +1,148 @@
+ .konten-note-sam {
+  
+  min-height: calc(100vh - 245px - var(--tinggi-catatan) * JUMLAH_CATATAN);
+  left: 7%;
+  position: absolute;
+  top: 15%;
+  width: 93%;
+  
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 35px; /* Jarak antar catatan */
+  padding: 20px 80px; /* Padding sesuai kebutuhan */
+}
+
+/* Perubahan pada catatan (note) */
+ .note {
+  background-color: #ecc2c2;
+  border-radius: 30px;
+  padding: 40px 40px;
+  text-align: justify;
+  font-size: 15px;
+  width: 80%;
+  
+  position: relative;
+  /* Hapus properti height agar catatan (note) menyesuaikan tinggi dengan kontennya */
+}
+
+ .note-content{
+  color: #000000;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: justify;
+  line-height: normal;
+}
+
+.icon-love {
+height: 35px;
+width: 35px;
+position: absolute;
+top: 20px;
+right: 20px;
+/* Tambahkan gaya lain yang sesuai */
+}
+
+.date {
+color: #342e2e;
+font-family: 'Inknut Antiqua', serif;
+font-size: 14px;
+font-weight: 400;
+letter-spacing: 0;
+line-height: normal;
+/* Tambahkan gaya lain yang sesuai */
+position: absolute;
+bottom: 10px;
+left: 40px;
+}
+
+ .edit {
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+}
+
+
+/* Gaya untuk konten modal */
+.modal-sampah{
+  display: flex;
+}
+.modal-sampah .modal-content {
+  font-family: 'Inknut Antiqua', serif;
+  padding: 20px;
+  
+}
+
+/* Gaya untuk judul modal */
+.modal-sampah .modal-header {
+  color: #000000;
+  font-weight: bold;
+}
+
+/* Gaya untuk tombol-tombol pada modal */
+.btn-edit,
+.btn-hapus {
+  margin-right: 30px;
+}
+
+/* Gaya untuk konten utama pada modal */
+.modal-sampah .modal-body {
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.modal-sampah .modal-body .hder{
+  flex-direction: row;
+}
+
+/* Gaya untuk ikon hati pada modal */
+.modal-sampah-note .modal-body .icon-fav,
+.modal-sampah-todo .modal-body .icon-fav {
+  font-size: 45px;
+  margin-right: 400px;
+}
+
+/* Gaya untuk teks pada modal */
+.modal-sampah .modal-body h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+/* Gaya untuk teks tanggal pada modal */
+.modal-sampah .modal-body p {
+  margin-bottom: 20px;
+}
+
+.modal-sampah .modal-body .tanggal{
+  text-align: right;
+  font-size: 15px;
+  color: #6d6d6d;
+}
+
+/* Gaya untuk tombol-tombol pada modal */
+
+.modal-sampah .modal-body .btn-kategori {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 20px;
+  background-color: #ffffff;
+}
+
+
+.modal-sampah .modal-body .icon-love,
+.modal-sampah .modal-body .btn-edit,
+.modal-sampah .modal-body .btn-hapus {
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Jarak antara btn edit dan btn hapus */
+.modal-sampah-note .modal-body .btn-edit, .modal-sampah-note .modal-body .btn-hapus{
+  margin-right: 28px; 
+  border: 1px solid #000000;
+  color: #000000;
+  border-radius: 20px;
+  background-color: #ffffff;
+}

@@ -1,18 +1,17 @@
 import React from "react";
 import { Link } from 'react-router-dom';
-import "./Dashboard.css";
-import image1 from "../aset/Ellipse 2.png";
-import image2 from "../aset/logo.png";
-import image3 from "../aset/Line 6.png";
-import image4 from "../aset/Line 7.png";
-import image5 from "../aset/Line 8.png";
-import image6 from "../aset/Line 9.png";
-import Navbar from './Navbar'; 
+import "./Home.css";
+import image1 from "../../aset/Ellipse 2.png";
+import image2 from "../../aset/logo.png";
+import image3 from "../../aset/Line 6.png";
+import image4 from "../../aset/Line 7.png";
+import image5 from "../../aset/Line 8.png";
+import image6 from "../../aset/Line 9.png";
 
-const Dashboard = () => {
+const Home = () => {
   return (
     <div>
-      <Navbar />
+      
       <div className="dashboard">
       <div className="div">
           <div className="overlap-group">
@@ -43,4 +42,4 @@ const Dashboard = () => {
     </div>
   );
 };
-export default Dashboard;
+export default Home;

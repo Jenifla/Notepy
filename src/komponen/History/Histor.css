@@ -1,0 +1,62 @@
+   .konten-note-his {
+   
+  min-height: calc(100vh - 245px - var(--tinggi-catatan) * JUMLAH_CATATAN);
+    left: 7%;
+    position: absolute;
+    top: 15%;
+    width: 93%;
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 35px; /* Jarak antar catatan */
+    padding: 20px 80px; /* Padding sesuai kebutuhan */
+  }
+  
+  /* Perubahan pada catatan (note) */
+ .note {
+    background-color: #ecc2c2;
+    border-radius: 30px;
+    padding: 40px 40px;
+    text-align: justify;
+    font-size: 15px;
+    width: 80%;
+    position: relative;
+    /* Hapus properti height agar catatan (note) menyesuaikan tinggi dengan kontennya */
+}
+
+ .note-content{
+    color: #000000;
+    font-family: 'Inknut Antiqua', serif;
+    font-size: 15px;
+    font-weight: 400;
+    text-align: justify;
+    line-height: normal;
+}
+
+ .icon-love {
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  /* Tambahkan gaya lain yang sesuai */
+}
+
+ .date {
+  color: #342e2e;
+  font-family: 'Inknut Antiqua', serif;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0;
+  line-height: normal;
+  /* Tambahkan gaya lain yang sesuai */
+  position: absolute;
+  bottom: 10px;
+  left: 40px;
+}
+
+ .edit {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+  }

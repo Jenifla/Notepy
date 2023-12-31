@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import axios from 'axios';
 import "./login.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEye, faEyeSlash } from '@fortawesome/free-solid-svg-icons';
@@ -17,11 +18,23 @@ const LogIn = () => {
     setShowPassword(!showPassword);
   };
 
-  //const handleLogin = () => {
-    // Handle login logic here, e.g., send data to the server
-  //  console.log("Email:", email);
-  //  console.log("Password:", password);
-  //};
+  const handleLogin = async () => {
+    try {
+      const response = await axios.post('http://localhost:8080/user/login', {
+        email,
+        password,
+      });
+      // Jika respons berhasil dan berisi token JWT
+    if (response.data && response.data.token) {
+      // Simpan token ke localStorage setelah berhasil login
+      localStorage.setItem('token', response.data.token);
+      // Lakukan navigasi ke halaman profil pengguna
+      window.location.href= 'http://localhost:3000/Dashboard';
+    }
+    } catch (error) {
+      console.error('Login failed:', error);
+    }
+  };
 
   return (
     <div className="SignUp">
@@ -44,7 +57,7 @@ const LogIn = () => {
               <img className="line" alt="Line" src={image5} />
             </div>
 
-            <div className="email">
+            <div className="login-email">
             <div className="input-container">
               <input
                 className="box"
@@ -55,7 +68,7 @@ const LogIn = () => {
               />
               </div>
             </div>
-            <div className="password">
+            <div className="login-password">
             <div className="input-container">
               <input
                 className="box-pass"
@@ -72,7 +85,7 @@ const LogIn = () => {
               </div>
             </div>
             <div className="button">
-            <Link to="/Home" className="button-sing-up">Log In</Link>
+            <Link  className="button-sing-up" onClick={handleLogin}>Log In</Link>
             </div>
             <div className="frame">
               <div className="text-wrapper-6">Don't have an account?</div>
@@ -82,8 +95,8 @@ const LogIn = () => {
             </div>
           </div>
         </div>
-        <div className="konten-gambar">
-          <img className="my-ima" alt="My Image" src={image1} />
+        <div className="konten-gambar-login">
+          <img className="my-login" alt="MyLogin" src={image1} />
         </div>
       </div>
     </div>
